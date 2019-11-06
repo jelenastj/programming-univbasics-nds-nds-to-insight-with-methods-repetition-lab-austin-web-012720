@@ -40,7 +40,8 @@ end
 def total_gross(source)
   total_amount
   index = 0 
-  while index < dir_list.length do
+  while index < source.length do
+    total_amount+=
     
   
   # Write this implementation
