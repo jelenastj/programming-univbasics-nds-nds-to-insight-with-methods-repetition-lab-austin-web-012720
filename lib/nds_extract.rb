@@ -38,7 +38,7 @@ def list_of_directors(source)
 end
 
 def total_gross(source)
-  result = {}
+  total_amount
   index = 0 
   while index < dir_list.length do
     
