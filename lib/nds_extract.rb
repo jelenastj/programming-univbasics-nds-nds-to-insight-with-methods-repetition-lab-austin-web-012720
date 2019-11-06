@@ -39,14 +39,14 @@ end
 
 def total_gross(source)
   
-   director_gross = directors_totals(source) #hash
-   director_names = list_of_directors(source) 
+   director_gross = directors_totals(source) #hash result
+   director_names = list_of_directors(source) #array result
     i = 0
     total = 0
 
-  while i < director_names.length do
-    dir_name = director_names[i]
-    total += director_earning_hash[dir_name]
+  while i < director_names.length do #loop thru array
+    dir_name = director_names[i]     #grab the name for key
+    total += director_gross[dir_name] #pass the key to get value 
     i += 1
 end
 total
