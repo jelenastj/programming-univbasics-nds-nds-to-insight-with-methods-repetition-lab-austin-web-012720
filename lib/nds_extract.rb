@@ -38,13 +38,14 @@ def list_of_directors(source)
 end
 
 def total_gross(source)
-  index = 0
-  grand_total = 0
-    while index < directors_totals[index].length do
-      total+=directors_totals[index]
-      index+=1
-    end
-grand_total
+  total_gross_of_earnings = 0
+  director_index = 0
+
+  while director_index < source.size do
+    total_gross_of_earnings += gross_for_director( source[director_index] )
+    director_index += 1
+  end
+total_gross_of_earnings
 end 
 
   
