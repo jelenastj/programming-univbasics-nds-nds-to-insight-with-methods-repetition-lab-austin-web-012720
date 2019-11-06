@@ -30,8 +30,8 @@ def list_of_directors(source)
   dir_list = []
   index = 0 
   while index <source.length do
-    index2 =0 
-    dir_list.push(source[:name])
+    dir_list.push(source[:name][index])
+    index+=1 
   end
   dir_list
   
